@@ -13,6 +13,8 @@ public class Main {
         int col = inp.nextInt();
 
 
+
+
         MineSweeper mine = new MineSweeper(row,col);
         mine.run();
 
