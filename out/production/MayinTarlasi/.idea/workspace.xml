@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="00130218-e053-4c97-a17d-cc095cd2f3f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MineSweeper/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MineSweeper/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MineSweeper/src/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MineSweeper/src/MineSweeper.java" afterDir="false" />
     </list>
