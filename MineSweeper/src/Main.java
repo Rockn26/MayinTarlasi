@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
+        // 7 - Dizi (matris) boyutu kullanıcı tarafından belirlendi
         Scanner inp = new Scanner(System.in);
         System.out.println("Oyunun Boyutlarını Seçiniz : ");
         System.out.print("Satır No: ");

@@ -1,9 +1,10 @@
 package MineSweeper.src;
 
-import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
+
+// 5- Proje MineSweeper sınıfı içerisinde tasarlandı
 public class MineSweeper {
     int rowNumber, colNumber, row, col, size;
     boolean game = true;
@@ -21,27 +22,38 @@ public class MineSweeper {
         size = (rowNumber * colNumber);
     }
 
+
+    // 6- Sınıf içerisinde ilgili metotlar (mesela oyun başlatma, oyunu kaybetme gibi fonksiyonların kontrolü) tanımlandı.
     public void run() {
         int success = 0;
         mineMap();
         printMap();
         boardMap();
         while (game) {
+            // 9 - Kullanıcıdan işaretlemek istediği satır ve sütun bilgisi alınıyor.
             System.out.print("SATIR NO : ");
             row = inp.nextInt();
             System.out.print("SÜTUN NO : ");
             col = inp.nextInt();
+
+            // 10 - Kullanıcının seçtiği nokta dizinin sınırları içerisinde olup olmadığı kontrol ediliyor,
+            // değilse uyarı mesajı veriliyor ve tekrar giriş isteniyor
             if (row < 0 || row >= rowNumber || col < 0 || col >= colNumber) {
                 System.out.println("Hatalı indis seçimi ! Tekrar girin.");
                 continue;
             }
+
+            // 15 - Kullanıcının oyunu kaybetme ya da kazanma durumunda uygun mesajlar kullanıcıya gösteriliyor
+
             if (map[row][col].equals("*")) {
+                // 13- Kullanıcı mayına bastığında oyunu kaybedecek şekilde kontrol yapılmış.
                 System.out.println("KAYBETTİNİZ");
                 break;
             } else {
                 check();
                 success++;
             }
+            // 14 - Tüm noktalar mayınsız bir şekilde seçilirse oyunu kazanmanın kontrolü yapılıyor.
             if (success == (size - (size / 4))) {
                 System.out.println("TEBRİKLER, KAZANDINIZ ! ");
                 game = false;
@@ -51,6 +63,8 @@ public class MineSweeper {
     }
 
     public void check() {
+
+        // 12 - Girilen noktada mayın yoksa etrafındaki mayın sayısı veya 0 değeri yerine yazılmış.
         if (map[row][col].equals("-")) {
             int count = 0;
 
@@ -94,6 +108,7 @@ public class MineSweeper {
                 count++;
             }
 
+            // 11 -Kullanıcı her hamle yaptığında oyun alanı güncelleniyor
             String counter = String.valueOf(count);
             map[row][col] = counter;
             board[row][col] = counter;
@@ -116,12 +131,14 @@ public class MineSweeper {
         }
     }
 
+
+    // 8 - Diziye uygun sayıda rastgele mayın yerleştirildi.
     public void randomMine() {
         int randR, randC, count = 0;
-        while (count != (size/4)){
+        while (count != (size / 4)) {
             randR = r.nextInt(rowNumber);
             randC = r.nextInt(colNumber);
-            if (!map[randR][randC].equals("*")){
+            if (!map[randR][randC].equals("*")) {
                 map[randR][randC] = "*";
                 count++;
             }
@@ -143,9 +160,9 @@ public class MineSweeper {
         System.out.println("============================");
     }
 
-    public void boardMap(){
-        for (int i = 0; i < board.length; i++){
-            for (int j = 0; j < board[i].length; j++){
+    public void boardMap() {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
                 System.out.print(board[i][j] + " ");
             }
             System.out.println();
