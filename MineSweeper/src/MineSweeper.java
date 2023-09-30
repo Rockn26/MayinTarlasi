@@ -50,8 +50,12 @@ public class MineSweeper {
                 System.out.println("KAYBETTİNİZ");
                 break;
             } else {
-                check();
-                success++;
+                if (!this.map[row][col].equals("-")) {
+                    System.out.println("Bu hamleyi zaten yaptınız !");
+                } else {
+                    check();
+                    success++;
+                }
             }
             // 14 - Tüm noktalar mayınsız bir şekilde seçilirse oyunu kazanmanın kontrolü yapılıyor.
             if (success == (size - (size / 4))) {

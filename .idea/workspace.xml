@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="00130218-e053-4c97-a17d-cc095cd2f3f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MineSweeper/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MineSweeper/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MineSweeper/src/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/MineSweeper/src/MineSweeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MayinTarlasi/MineSweeper/src/MineSweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MayinTarlasi/MineSweeper/src/MineSweeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MayinTarlasi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MayinTarlasi/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/irfananik/Documents/GitHub/MayinTarlasi"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/irfananik/Documents/GitHub/MayinTarlasi&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/MineSweeper" />
